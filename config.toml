@@ -2,6 +2,8 @@ baseurl = "http://dontpost.me/"
 languageCode = "en-us"
 title = "dontpost.me"
 theme = "hugo-strata-theme"
+publishDir = "docs"
+
 
 [params]
   # Warning Keys are case sensitives
