@@ -1,0 +1,143 @@
+baseurl = "http://dontpost.me/"
+languageCode = "en-us"
+title = "dontpost.me"
+theme = "hugo-strata-theme"
+
+[params]
+  # Warning Keys are case sensitives
+  Subtitle = "Your subtitle !"
+  name="name"
+  date_format="2006-01-02"
+  description = "description"
+[params.rss]
+    hide=true
+
+[params.sidebar]
+  bio="Sharing photos online can have unintended consequences. **Please don't post me.**"
+  github="dontpostme/dontpostme"
+  copyright = [
+  ]
+
+
+	[params.about]
+		hide  = false
+		title = "Please don't post me."
+		content = "Posting photos and other personal information online can have unintended consequences. If you saw this site on a t-shirt, hat, or elsewhere in the real world. **_Please respect the privacy of the person who sent you here_**, and don't post photos or videos of them on social networks, chat apps or elsewhere on the Internet.</p><p>We don't mean to be antisocial or difficult. Just cautious. Once a photo is online, it is often impossible to erase it. Below you'll find a few examples of why we'd rather not have our faces online. Please take a look. </p><p>For more information take a look at the [FAQ](/#FAQ)."
+
+	[params.portfolio]
+		hide  = false
+		title = "Unintended Consequences of Over-Sharing"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			link = "http://www.ilknowledge.com/2016/12/russian-photographer-uses-facial.html"
+			thumb = "thumbs/metro.jpg"
+			title = "Russian app recognises faces with 70% accuracy"
+			description = "A Russian photographer used a facial recognition app and a social network to identify strangers on the metro with 70% accuracy. It's going to get more precise."
+
+		[[params.portfolio.gallery]]
+			link = "http://www.businessinsider.com/advertisers-using-facial-recognition-technology-2013-5?op=1/#e-facial-recognition-software-can-either-capture-real-people-from-its-cameras-or-convert-a-flat-image-into-a-3d-model-2"
+			thumb = "thumbs/drone.jpg"
+			title = "Tracked everywhere you go"
+			description = "Advertisers and stores are integrating facial recognition into billboards, and malls, and drones to track and profile customers. Like with online ads, your profile can be correlated and tracked without limits."
+
+	[params.swag]
+		hide  = false
+		title = "Swag"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.swag.gallery]]
+			link = "https://teespring.com/dontpostme"
+			thumb = "tshirt.png"
+			title = "Buy swag"
+			description = "We currentlyhave a shop on teespring for quick orders, but you can have your own printed anywhere. We don't make money on these sales."
+
+		[[params.swag.gallery]]
+			link = "http://www.businessinsider.com/advertisers-using-facial-recognition-technology-2013-5?op=1/#e-facial-recognition-software-can-either-capture-real-people-from-its-cameras-or-convert-a-flat-image-into-a-3d-model-2"
+			thumb = "logo_horiz.png"
+			title = "Logos"
+			description = "All of our logos are under free licenses, so you can print them on anything you like -- tshirts, hats, laser etching, whatever.Go wild!"
+
+	[params.faq]
+        title = "FAQ"
+        hide = false
+		[[params.faq.question]]
+			question = "Why are you doing this?"
+			answer = "Privacy is important, but it is quickly disappearing in our society. Unfortunately most of us are in the habit of posting everything online and don't realise that it affects other people. We are doing this to try and help people realise the consequences of over-sharing."
+
+		[[params.faq.question]]
+			question = "Won't this just draw extra attention?"
+			answer = "It might, yes. But being posted on social media is virtually unavoidable at this point. In many cases this is simply because people are unaware that sharing information about people without their permission is harmful; by making people aware of the issue, hopefully they'll begin to think twice about their habits."
+
+		[[params.faq.question]]
+			question = "Can I get involved?"
+			answer = "Absolutely! Drop us a message or pull request on [github](http://github.com/dontpostme/dontpostme). Or share the website, wear the logos, and simply talk about online privacy with your friends."
+            anchor="getinvolved"
+
+
+		[[params.faq.question]]
+			question = "Can I make my own swag?"
+			answer = "All of our logos are under Free licenses, so please take them, remix them, and print them. You can download them all on [our github repository](http://github.com/dontpostme/dontpostme)."
+
+		[[params.faq.question]]
+			question = "Can I sell my own swag?"
+			answer = "Sure! The only rule is that we won't post links to stores when you're making money off the sales (though you're certainly free to do so)."
+
+	[params.recentposts]
+		hide  = true
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = true
+		title = "Get In Touch"
+		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+
+		address = [
+			"1234 Somewhere Rd.",
+			"Nashville, TN 00000",
+			"United States"
+		]
+		phone = "000-000-0000"
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+
+[[menu.main]]
+	name = "Swag"
+	url  = "#swag"
+	weight = 15
+
+[[menu.main]]
+	name = "Get Involved"
+	url  = "#getinvolved"
+	weight = 5
+
+[[menu.main]]
+	name = "FAQ"
+	url  = "#FAQ"
+    weight = 10
+
+
+
