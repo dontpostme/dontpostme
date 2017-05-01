@@ -1,0 +1,13 @@
+{{ "<!-- faq -->" | safeHTML }}
+<section>
+	{{ with .Site.Params.faq.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+	<div >
+		{{ range .Site.Params.faq.question }}
+        <a name="{{ .anchor }}" ></a>
+		<article class=" 12u$(small) ">
+			<h3>{{ .question | markdownify }}</h3>
+			<p>{{ .answer | markdownify }}</p>
+		</article>
+		{{ end }}
+	</div>
+</section>
