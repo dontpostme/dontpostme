@@ -32,6 +32,13 @@ publishDir = "docs"
 
 		# The images and thumbnails are stored under static/images
 		# Create and change subfolders as you like
+
+		[[params.portfolio.gallery]]
+			link = "https://www.privateinternetaccess.com/blog/2017/08/putting-face-facebook-mark-zuckerberg-building-world-without-public-anonymity/"
+			thumb = "thumbs/deepface.jpg"
+			title = "Facebook beats 97% facial recognition accuracy"
+			description = "Facebook recentely \"claimed accuracy of 97.35% correct recognition of faces in real-life photos\", and 83% identification when **faces were not visible in photos**."
+            
 		[[params.portfolio.gallery]]
 			link = "http://www.ilknowledge.com/2016/12/russian-photographer-uses-facial.html"
 			thumb = "thumbs/metro.jpg"
@@ -43,6 +50,7 @@ publishDir = "docs"
 			thumb = "thumbs/drone.jpg"
 			title = "Tracked everywhere you go"
 			description = "Advertisers and stores are integrating facial recognition into billboards, and malls, and drones to track and profile customers. Like with online ads, your profile can be correlated and tracked without limits."
+
 
 	[params.swag]
 		hide  = false
